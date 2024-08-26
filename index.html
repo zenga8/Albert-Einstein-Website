@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Albert Einstein - Home</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/easyzoom.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="assets/images/DALL-E-albert-einstein.png" alt="Albert Einstein Logo" id="logo">
+        <div id="header-content">
+            <h1>Albert Einstein</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biography.html">Biography</a></li>
+                    <li><a href="scientific_contributions/index.html">Scientific Contributions</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="educational_resources.html">Educational Resources</a></li>
+                    <li><a href="historical_context/index.html">Historical Context</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Welcome section -->
+        <h2>Welcome to the Albert Einstein Website</h2>
+        <p>This website is dedicated to Albert Einstein. You can learn about him and his legacy here!</p>
+        <figure>
+            <div class="easyzoom easyzoom--overlay">
+                <a href="assets/images/Albert-Einstein-1947.jpg">
+                    <img src="assets/images/Albert-Einstein-1947.jpg" style="height: 550px; width: 500px" alt="Portrait Image of Albert Einstein">
+                </a>
+            </div>
+            <figcaption>Albert Einstein. Image. Encyclopædia Britannica. Encyclopædia Britannica. <a href="https://www.britannica.com/biography/Albert-Einstein/General-relativity-and-teaching-career#/media/1/181349/155559" target="_blank">Source</a>. Accessed June 24, 2024.</figcaption>
+        </figure>
+        <!-- Quick links section -->
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="scientific_contributions/index.html">Scientific Contributions</a></li>
+            <li><a href="historical_context/index.html">Historical Context</a></li>
+            <li><a href="media.html">Media</a></li>
+        </ul>
+        <!-- Learn more section -->
+        <h3>Learn More</h3>
+        <ul>
+            <li><a href="https://www.britannica.com/biography/Albert-Einstein" target="_blank">Britannica - Albert Einstein</a></li>
+        </ul>
+        <!-- Search Wikipedia for Albert Einstein section -->
+        <h3>Wikipedia Search</h3>
+        <p>Wikipedia API code sourced from MediaWiki. <a href="https://www.mediawiki.org/wiki/API:Main_page" target="_blank">Source</a>. Accessed August 24, 2024.</p>
+        <div class="container">
+            <h4>Use this search for Wikipedia articles related to Albert Einstein!</h4>
+            <input type="text" id="wiki-search-input" placeholder="Search within Albert Einstein's topics...">
+            <button id="wiki-search-btn">Search</button>
+            <div id="wiki-results"></div>
+        </div>
+        <!-- Scroll to Top Button -->
+        <button id="scroll-to-top" title="Go to top">Top</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Albert Einstein Educational Website</p>
+        <p>Author: Angela Zeng</p>
+        <p>Date of Last Modification: August 24, 2024</p>
+    </footer>
+    <!-- JavaScript files at the end of the body -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/easyzoom.js"></script>
+    <script src="assets/js/zoom.js"></script>
+    <script src="assets/js/scroll-to-top.js"></script>
+    <script src="assets/js/wikipedia-search.js"></script>
+</body>
+</html>

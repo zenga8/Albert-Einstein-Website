@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Albert Einstein - Biography</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="assets/images/DALL-E-albert-einstein.png" alt="Albert Einstein Logo" id="logo">
+        <div id="header-content">
+            <h1>Albert Einstein</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biography.html">Biography</a></li>
+                    <li><a href="scientific_contributions/index.html">Scientific Contributions</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="educational_resources.html">Educational Resources</a></li>
+                    <li><a href="historical_context/index.html">Historical Context</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Biography</h2>
+        <p>Information about Albert Einstein was sourced from <a href="https://en.wikipedia.org/wiki/Albert_Einstein" target="_blank">Wikipedia</a> and <a href="https://www.britannica.com/biography/Albert-Einstein" target="_blank">Encyclopædia Britannica</a>. Accessed: August 15, 2024.</p>
+        <!-- Interactive Timeline -->
+        <h3>Interactive Timeline</h3>
+        <input type="text" id="search-bar" placeholder="Search events...">
+        <button onclick="searchEvents()">Search</button>
+        <div id="timeline"></div>
+        <div id="event-details" class="modal" style="display:none;">
+            <!-- Details will be populated by JavaScript (timeline.js) -->
+        </div>
+        <!-- Scientific Contributions Section -->
+        <h3>Major Scientific Contributions and Discoveries</h3>
+        <table>
+            <caption>Major Scientific Contributions and Discoveries</caption>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Contribution/Discovery</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1905</td>
+                    <td>Annus Mirabilis papers: Photoelectric effect, Brownian motion, Special relativity, Mass-energy equivalence</td>
+                </tr>
+                <tr>
+                    <td>1915</td>
+                    <td>General Theory of Relativity</td>
+                </tr>
+                <tr>
+                    <td>1921</td>
+                    <td>Nobel Prize in Physics for the photoelectric effect</td>
+                </tr>
+                <tr>
+                    <td>1924</td>
+                    <td>Bose-Einstein Condensate theory</td>
+                </tr>
+                <tr>
+                    <td>1935</td>
+                    <td>Einstein-Podolsky-Rosen paradox</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Biography Details Section -->
+        <h3>Biography Details</h3>
+        <h4>Early Life</h4>
+        <p>Albert Einstein was born in Ulm, Germany, in 1879.</p>
+
+        <h4>Education and Early Career</h4>
+        <p>Einstein studied physics at the Swiss Federal Polytechnic in Zurich.</p>
+
+        <h4>Major Achievements</h4>
+        <p>He published the theory of relativity and won the Nobel Prize in Physics in 1921.</p>
+
+        <h4>Personal Life</h4>
+        <p>Einstein married Mileva Maric and later Elsa Löwenthal.</p>
+
+        <h4>Later Years and Legacy</h4>
+        <p>Einstein spent his later years in Princeton, New Jersey, and passed away in 1955.</p>
+        <!-- Scroll to Top Button -->
+        <button id="scroll-to-top" title="Go to top">Top</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Albert Einstein Educational Website</p>
+        <p>Author: Angela Zeng</p>
+        <p>Date of Last Modification: August 24, 2024</p>
+    </footer>
+    <!-- JavaScript files at the end of the body -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/timeline.js" defer></script>
+    <script src="assets/js/scroll-to-top.js"></script>
+</body>
+</html>

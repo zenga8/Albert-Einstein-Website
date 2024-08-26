@@ -1,0 +1,326 @@
+/* Import Google Font Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+/*
+    Reset basic elements to make sure there is consistency across browsers
+    Refernce: https://meyerweb.com/eric/tools/css/reset/
+    Accessed: [July 11, 2024]
+*/
+body, h1, h2, h3, h4, p, ul, li, a, img, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Body styling */
+body {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Logo styling */
+#logo {
+    height: 60px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #213ab5;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+#header-content {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #334dd1;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+nav ul li a:hover {
+    background-color: #213ab5;
+    color: #fff;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    flex: 1;
+}
+
+/* Heading and paragraph styling */
+h1, h2, h3, h4, p {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.40em;
+    font-weight: 400;
+}
+
+/* List styling */
+ul, ol {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Footer styling */
+footer {
+    background-color: #213ab5;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+/* Slideshow styling */
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    max-width: 800px;
+    text-align:center
+}
+
+/* Hide the images on default */
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: -50px;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+    left: -50px;
+}
+
+/* The dots below the images */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #213ab5;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+.active, .dot:hover {
+    background-color: #4361f5;
+}
+
+/* Fade animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Modal styling */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+/* Universal button styling (for buttons and also the Submit button in the form of contact.html */
+button, input[type="submit"] {
+    padding: 5px 10px;
+    border: none;
+    background-color: #213ab5;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    transition: 0.5s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #334dd1;
+}
+
+/* Universal container styling */
+.container {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Interactive Quiz styling */
+#options-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Dynamic Timeline styling */
+#timeline {
+    border-left: 2px solid #213ab5;
+    padding-left: 20px;
+}
+
+.timeline-event {
+    padding-left: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.timeline-event h4 {
+    color: #213ab5;
+    margin-bottom: 5px;
+}
+
+.timeline-event:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 10px;
+    height: 10px;
+    width: 10px;
+    background-color: #213ab5;
+    border-radius: 50%;
+}
+
+/* Relative Theory Calculator styling */
+#result {
+    font-weight: bold;
+}
+
+/* Scroll to Top Button Styling */
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+/* Input and textarea Styling */
+input[type="text"], input[type="number"], input[type="email"], input[type="search"], textarea {
+    width: 95%;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    color: #333;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+textarea {
+    resize: vertical;
+}

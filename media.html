@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Albert Einstein - Media</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/easyzoom.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="assets/images/DALL-E-albert-einstein.png" alt="Albert Einstein Logo" id="logo">
+        <div id="header-content">
+            <h1>Albert Einstein</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biography.html">Biography</a></li>
+                    <li><a href="scientific_contributions/index.html">Scientific Contributions</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="educational_resources.html">Educational Resources</a></li>
+                    <li><a href="historical_context/index.html">Historical Context</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Media</h2>
+        <!-- Images section -->
+        <h3>Images</h3>
+        <!-- Slideshow code sourced from W3Schools. Original source: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+         <!-- Image zoom code sources from https://i-like-robots.github.io/EasyZoom/ -->
+        <div class="slideshow-container">
+            <!-- The <figure> setup was guided by the documentation on MDN Web Docs. 
+            Reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure 
+            Accessed: July 19, 2024 -->
+            <figure class="mySlides fade">
+                <div class="easyzoom easyzoom--overlay">
+                    <a href="assets/images/DALL-E-albert-einstein.png">
+                        <img src="assets/images/DALL-E-albert-einstein.png" style="height: 500px; width: 540px" alt="Albert Einstein Logo">
+                    </a>
+                </div>
+                <figcaption>Albert Einstein Website Logo. Created using DALL-E. Created August 6, 2024.</figcaption>
+            </figure>
+            <figure class="mySlides fade">
+                <div class="easyzoom easyzoom--overlay">
+                    <a href="assets/images/Albert-Einstein-1947.jpg">
+                        <img src="assets/images/Albert-Einstein-1947.jpg" style="height: 550px; width: 500px" alt="Portrait Image of Albert Einstein">
+                    </a>
+                </div>
+                <figcaption>Albert Einstein. Image. Encyclopædia Britannica. Encyclopædia Britannica. <a href="https://www.britannica.com/biography/Albert-Einstein/General-relativity-and-teaching-career#/media/1/181349/155559" target="_blank">Source</a>. Accessed June 24, 2024.</figcaption>
+            </figure>
+            <figure class="mySlides fade">
+                <div class="easyzoom easyzoom--overlay">
+                    <a href="assets/images/Einstein_1921_by_F_Schmutzer_-_restoration.jpg">
+                        <img src="assets/images/Einstein_1921_by_F_Schmutzer_-_restoration.jpg" style="height: 600px; width: 500px" alt="Portrait Image of Albert Einstein">
+                    </a>
+                </div>
+                <figcaption>Albert Einstein during a lecture in Vienna in 1921. Photo by Ferdinand Schmutzer. Restored by Adam Cuerden. <a href="https://en.wikipedia.org/wiki/Albert_Einstein#/media/File:Einstein_1921_by_F_Schmutzer_-_restoration.jpg" target="_blank">Source</a>. Accessed July 14, 2024.</figcaption>
+            </figure>            
+            <!-- Next and previous buttons -->
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+            <!-- The dots/circles -->
+            <div>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <p>Slideshow code sourced from <a href="https://www.w3schools.com/howto/howto_js_slideshow.asp" target="_blank">W3Schools (Accessed July 18, 2024)</a>.</p>
+            <p>EasyZoom code sourced from <a href="https://i-like-robots.github.io/EasyZoom/" target="_blank">EasyZoom (Accessed August 21, 2024)</a>.</p>
+        </div>
+        <!-- Books section -->
+        <h3>Google Books Search</h3>
+        <p>Google Books API code sourced from Google Books API documentation. <a href="https://developers.google.com/books/docs/v1/using" target="_blank">Source.</a> Accessed August 24, 2024.</p>
+        <div class="container">
+            <h4>Search for books related to Albert Einstein!</h4>
+            <input type="text" id="book-query" placeholder="Enter a search term">
+            <button id="search-books-btn">Search</button>
+            <div id="book-results"></div>
+        </div>
+        
+        <!-- Videos section -->
+        <h3>Videos</h3>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=2WpkQCNMT2s" target="_blank">Albert Einstein: Interview on War, Nationalism, and Democracy</a></li>
+        </ul>
+        <!-- Infographics section -->
+        <h3>Infographics</h3>
+        <ul>
+            <li><a href="https://www.behance.net/gallery/22452899/How-Albert-Einstein-Started-Infographic/modules/149791425" target="_blank">How Einstein Started</a></li>
+        </ul>
+        <!-- Scroll to Top Button -->
+        <button id="scroll-to-top" title="Go to top">Top</button>
+    </main>
+    <footer>
+        <p>&copy; 2024 Albert Einstein Educational Website</p>
+        <p>Author: Angela Zeng</p>
+        <p>Date of Last Modification: August 24, 2024</p>
+    </footer>
+    <!-- JavaScript files at the end of the body -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/easyzoom.js"></script>
+    <script src="assets/js/slideshow.js"></script>
+    <script src="assets/js/zoom.js"></script>
+    <script src="assets/js/scroll-to-top.js"></script>
+    <script src="assets/js/google-books.js"></script>
+</body>
+</html>
